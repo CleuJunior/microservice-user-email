@@ -36,7 +36,7 @@ spring:
       ddl-auto: update
 
   rabbitmq:
-    addresses: amqps://ufdasfgg:GEytoc_UqquNcwrzqEnP6gwhAl5zjgMX@beaver.rmq.cloudamqp.com/ufdasfgg
+    addresses: ${LINK_MQ}
 
 broker:
   queue:
