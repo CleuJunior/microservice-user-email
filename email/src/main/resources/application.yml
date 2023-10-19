@@ -13,6 +13,20 @@ spring:
       enabled: true
       path: /h2-console
   jpa:
+    defer-datasource-initialization: true
     database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
+      show-sql: true
+      format_sql: true
       ddl-auto: update
+
+  rabbitmq:
+    addresses: amqps://ufdasfgg:GEytoc_UqquNcwrzqEnP6gwhAl5zjgMX@beaver.rmq.cloudamqp.com/ufdasfgg
+
+broker:
+  queue:
+    email:
+      name: default.email
+
+
+# amqps://ufdasfgg:GEytoc_UqquNcwrzqEnP6gwhAl5zjgMX@beaver.rmq.cloudamqp.com/ufdasfgg
